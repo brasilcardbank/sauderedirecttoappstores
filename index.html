@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecionando...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        window.onload = function () {
+            const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+            if (/android/i.test(userAgent)) {
+                window.location.href = "https://play.google.com/store/apps/details?id=br.com.appbrasilcard";
+            } else if (/iPad|iPhone|iPod/.test(userAgent)) {
+                window.location.href = "https://apps.apple.com/us/app/brasilcard-sa%C3%BAde/id6737772294";
+            } else {
+                window.location.href = "https://www.brasilcard.net";
+            }
+        };
+    </script>
+</head>
+
+<body>
+    <p>Redirecionando para a loja correta...</p>
+</body>
+
+</html>
